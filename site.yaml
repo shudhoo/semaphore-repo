@@ -5,4 +5,4 @@
     - name: Install Apache2
       package:
         name: apache2
-        state: present
+        state: absent
