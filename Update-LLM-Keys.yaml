@@ -3,6 +3,8 @@
 ---
 - name: Update LLM Keys Environment Variables
   hosts: localhost # test locally 1st
+  become: yes
+  gather_facts: no
   vars_files:
     - vars/secret.yaml
   vars: # for modularizing the code
